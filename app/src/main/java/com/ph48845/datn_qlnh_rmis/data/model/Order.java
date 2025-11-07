@@ -14,6 +14,16 @@ public class Order {
     public Order() {
     }
 
+    public Order(String orderId, String tableId, String waiterId, long createdAt, boolean paid, double totalAmount, List<OrderItem> items) {
+        this.orderId = orderId;
+        this.tableId = tableId;
+        this.waiterId = waiterId;
+        this.createdAt = createdAt;
+        this.paid = paid;
+        this.totalAmount = totalAmount;
+        this.items = items;
+    }
+
     // Getters & Setters
     public String getOrderId() { return orderId; }
     public void setOrderId(String orderId) { this.orderId = orderId; }

@@ -11,11 +11,15 @@ public class MenuItem {
     private double price;
     private String category;
 
+    private int quantity;
+
+
     // Constructors
-    public MenuItem(String name, double price, String category) {
+    public MenuItem(String name, double price, String category, int quantity) {
         this.name = name;
         this.price = price;
         this.category = category;
+        this.quantity = quantity;
     }
 
     // Getters & Setters
@@ -27,4 +31,6 @@ public class MenuItem {
     public void setPrice(double price) { this.price = price; }
     public String getCategory() { return category; }
     public void setCategory(String category) { this.category = category; }
+    public int getQuantity() { return quantity; }
+    public void setQuantity(int quantity) { this.quantity = quantity; }
 }
